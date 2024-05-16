@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body onload="display()">
+    <h1>CRUD</h1>
+    <label for="id">id : </label>
+    <input type="number" id="id">
+    <label for="name">name : </label>
+    <input type="text" id="name">
+    <input type="button" value="insert" onclick="insert()">
+    <!-- <input type="button" value="delete" onclick="Delete()"> -->
+    <input type="button" value="update" onclick="update()">
+    <input type="button" value="display" onclick="display()">
+    <div id="result"></div>
+    <script src="./script.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</body>
+</html>
